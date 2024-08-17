@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* ============================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::-webkit-scrollbar{
+    display: none;
+} 
+@layer base{
+    html{
+        @apply font-[Inter]
+    }
+
+}
+
+
+@layer components{
+    .menu-a{
+        @apply text-[#636270] text-[14] font-semibold capitalize  hover:text-[#007580] duration-300 hidden md:block
+    }
+
+    .featureHead{
+        @apply text-primary text-lg leading-[110%] font-medium
+    }
+
+    .featureText{
+        @apply text-featureText text-[15px]
+    }
+
+    .featuresHeadText{
+        @apply text-primary text-[32px] font-semibold
+    }
+    .featuresHeadArrow{
+        @apply px-2 py-1 text-primary bg-secondary rounded-[48px]  hover:bg-[#007580] hover:text-white
+    }
+
+    .socialMedia{
+        @apply p-2 hover:text-teal duration-300 cursor-pointer
+    }
+
+    .menu-url{
+        @apply text-primary text-base hover:text-teal hover:underline duration-300 
+    }
+    .footer-url{
+        @apply text-primary text-base hover:text-teal hover:underline duration-300 
+    }
+ 
+}
